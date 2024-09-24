@@ -1,0 +1,15 @@
+@startuml
+actor Admin as A
+actor Reader as R
+
+A --> (Manage Books)
+A --> (Manage Authors)
+A --> (Manage Readers)
+
+(Manage Books) <|-- (Advanced Search)
+(Manage Books) <|-- (Brrow a Book)
+(Manage Books) <|-- (Display Available Books in console)
+
+R --> (View Available Books)
+(View Available Books) <|-- (Search Book)
+@enduml

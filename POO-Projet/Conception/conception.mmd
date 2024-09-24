@@ -1,0 +1,29 @@
+classDiagram
+    class LIVRE {
+        +int id
+        +String ISBN
+        +String TITRE
+        +String DATE_PUBLICATION
+    }
+
+    class AUTEUR {
+        +int id
+        +String nom
+        +String prenom
+        +date nationality
+    }
+
+    class Lecteur {
+        +int id
+        +int numero_card
+        +int nom
+        +int prenom
+        +int adresse
+    }
+
+    class Emprunt {
+        +int id
+        +int date_debut
+        +int date_retour_prevue
+        +int date_retour_reel
+    }
